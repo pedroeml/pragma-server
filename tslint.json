@@ -8,6 +8,7 @@
     "quotemark": [true, "single"],
     "ordered-imports": [true],
     "max-line-length": [true, 150],
+    "arrow-parens": [false],
     "object-literal-sort-keys": [false]
   }
 }
