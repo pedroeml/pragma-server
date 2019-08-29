@@ -1,9 +1,17 @@
 {
   "name": "pragma-server",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "Pragma Brewery NestJS server",
+  "author": "pedroeml",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroeml/pragma-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pedroeml/pragma-server/issues"
+  },
+  "homepage": "https://github.com/pedroeml/pragma-server#readme",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
