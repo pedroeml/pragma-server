@@ -1,6 +1,6 @@
+import { TemperatureRangeDto } from '../../temperature/dto/temperature-range.dto';
 import { BeerEnum } from '../enum/beer.enum';
 import { IContainerResponse } from '../integration/container.response';
-import { TemperatureRangeDto } from './temperature-range.dto';
 
 export class ContainerDto {
   public readonly id: string;

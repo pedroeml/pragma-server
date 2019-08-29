@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
+import { TemperatureModule } from '../temperature/temperature.module';
 import { ContainerController } from './container.controller';
 import { ContainerRestService } from './service/container-rest.service';
 import { ContainerService } from './service/container.service';
-import { FakeTemperatureRangeResponseFactory } from './service/factory/fake-temperature-range-response.factory';
 
 @Module({
-  imports: [],
+  imports: [TemperatureModule],
   controllers: [ContainerController],
-  providers: [ContainerService, ContainerRestService, FakeTemperatureRangeResponseFactory],
+  providers: [ContainerService, ContainerRestService],
 })
 export class ContainerModule {}

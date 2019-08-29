@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { BeerEnum } from '../../enum/beer.enum';
-import { ITemperatureRangeResponse } from '../../integration/temperature-range.response';
+import { BeerEnum } from '../../container/enum/beer.enum';
+import { ITemperatureRangeResponse } from '../integration/temperature-range.response';
 
 @Injectable()
 export class FakeTemperatureRangeResponseFactory {

@@ -4,25 +4,9 @@ import { map } from 'rxjs/operators';
 import { isNullOrUndefined } from 'util';
 import { BeerEnum } from '../enum/beer.enum';
 import { IContainerResponse } from '../integration/container.response';
-import { ITemperatureRangeResponse } from '../integration/temperature-range.response';
-import { FakeTemperatureRangeResponseFactory } from './factory/fake-temperature-range-response.factory';
 
 @Injectable()
 export class ContainerRestService {
-
-  constructor(private readonly factory: FakeTemperatureRangeResponseFactory) { }
-
-  public getTemperatureRange(beerType: BeerEnum): Observable<ITemperatureRangeResponse> {
-    return of(this.factory.create(beerType)).pipe(
-      map(tempRange => {
-        if (isNullOrUndefined(tempRange)) {
-          throw new HttpException('Not Found', 404);
-        }
-
-        return tempRange;
-      }),
-    );
-  }
 
   public getContainers(truckId: string): Observable<IContainerResponse[]> {
     return of(this.getFakeContainerCollection().get(truckId)).pipe(

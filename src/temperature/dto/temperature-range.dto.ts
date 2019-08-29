@@ -1,4 +1,4 @@
-import { ITemperatureRangeResponse } from './../integration/temperature-range.response';
+import { ITemperatureRangeResponse } from '../integration/temperature-range.response';
 
 export class TemperatureRangeDto {
   public readonly minTemperature: number;
