@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/pedroeml/pragma-server/workflows/Node.js%20CI/badge.svg)
+
 # Pragma Brewery Server
 
 This is a simple RESTful Node.js server built with NestJS for the Pragma Brewery Code Assignment.
